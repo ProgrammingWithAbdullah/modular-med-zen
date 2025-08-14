@@ -19,7 +19,7 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Products', href: '#products' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact Us', href: '#contact' },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/a71b9307-accc-40b4-a67e-faf4da7ebcee.png" 
+              src="../../public/logo.png" 
               alt="Modular MED Solutions" 
               className="h-12 w-auto"
             />
@@ -62,7 +62,7 @@ const Header = () => {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="text-right text-sm">
+            {/* <div className="text-right text-sm">
               <div className="flex items-center space-x-1 text-muted-foreground">
                 <Phone className="h-3 w-3" />
                 <span>+92 XXX XXXXXXX</span>
@@ -71,7 +71,7 @@ const Header = () => {
                 <Mail className="h-3 w-3" />
                 <span>info@modularmed.com</span>
               </div>
-            </div>
+            </div> */}
             <Button variant="default" className="bg-gradient-primary hover:opacity-90 transition-opacity">
               Get Quote
             </Button>

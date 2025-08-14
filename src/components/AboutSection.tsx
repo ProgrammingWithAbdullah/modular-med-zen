@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Building2, Users, Award, Zap, Shield, Wrench } from 'lucide-react';
 import labImage from '@/assets/lab-equipment.jpg';
 import cleanroomImage from '@/assets/cleanroom.jpg';
+import ProductCarousel from '@/components/ProductCarousel';
 
 const AboutSection = () => {
   const features = [
@@ -55,6 +56,9 @@ const AboutSection = () => {
             Clean Rooms & Laboratory Furniture to suit the needs of modern medical workspace.
           </p>
         </div>
+
+        {/* Product Carousel */}
+        <ProductCarousel />
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
