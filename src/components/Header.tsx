@@ -35,8 +35,8 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="../../public/logo.png" 
-              alt="Modular MED Solutions" 
+              src="/src/assets/logo.png" 
+              alt="Modular MED Solutions"
               className="h-12 w-auto"
             />
             <div className="hidden sm:block">
