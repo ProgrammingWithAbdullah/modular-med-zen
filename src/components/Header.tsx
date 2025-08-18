@@ -16,10 +16,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Products', href: '#products' },
+    { name: 'Products & Services', href: '/products-services' },
+    { name: 'Why Choose Us', href: '/why-choose-us' },
     { name: 'Contact Us', href: '#contact' },
   ];
 
