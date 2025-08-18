@@ -17,13 +17,11 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '#about' },
     { name: 'Products & Services', href: '/products-services' },
     { name: 'Why Choose Us', href: '/why-choose-us' },
     { name: 'Affiliations', href: '/affiliations' },
     { name: 'Team', href: '/team-members' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Contact Us', href: '#contact' },
   ];
 
   return (
