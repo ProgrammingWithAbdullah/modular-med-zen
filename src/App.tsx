@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import WhyChooseUs from "./pages/why-chose-up";
+import WhyChooseUs from "./pages/why-chose-us";
 import ProductsServices from "./pages/ProductsServices";
 import Affiliations from "./pages/Affiliations";
 import TeamMembers from "./pages/TeamMembers";
