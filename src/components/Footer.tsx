@@ -11,6 +11,7 @@ import {
   Instagram,
   ArrowRight
 } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -45,7 +46,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <img 
-                src="/lovable-uploads/a71b9307-accc-40b4-a67e-faf4da7ebcee.png" 
+                src={logo}
                 alt="Modular MED Solutions" 
                 className="h-12 w-auto mb-4 brightness-0 invert"
               />

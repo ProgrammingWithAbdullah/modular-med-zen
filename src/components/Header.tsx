@@ -35,7 +35,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-4">
             <img 
               src={logo}
               alt="Modular MED Solutions"
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -74,9 +74,6 @@ const Header = () => {
                 <span>info@modularmed.com</span>
               </div>
             </div> */}
-            <Button variant="default" className="bg-gradient-primary hover:opacity-90 transition-opacity">
-              Get Quote
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -102,14 +99,6 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="px-4 pt-4 border-t border-border">
-                <Button 
-                  variant="default" 
-                  className="w-full bg-gradient-primary hover:opacity-90 transition-opacity"
-                >
-                  Get Quote
-                </Button>
-              </div>
             </nav>
           </div>
         )}

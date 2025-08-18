@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Phone, Mail, User, Crown } from 'lucide-react';
+import teammember1 from '@/assets/team1.jpg';
+import teammember2 from '@/assets/team2.jpg';
 
 const TeamMembers = () => {
   const teamMembers = [
@@ -12,7 +14,7 @@ const TeamMembers = () => {
       phone: '+923224498238',
       email: 'ceo@modularmedsolutions.com',
       description: 'Visionary leader with extensive experience in medical equipment manufacturing and healthcare solutions.',
-      icon: Crown,
+      image: teammember1,
       gradient: 'from-accent-cyan to-accent-pink'
     },
     {
@@ -21,7 +23,7 @@ const TeamMembers = () => {
       phone: '+923335173034',
       email: 'md@modularmedsolutions.com',
       description: 'Strategic operations expert driving innovation and excellence in modular medical infrastructure.',
-      icon: User,
+      image: teammember2,
       gradient: 'from-accent-pink to-accent-orange'
     }
   ];
@@ -55,24 +57,24 @@ const TeamMembers = () => {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <CardContent className="p-0">
-                  {/* Header with gradient */}
-                  <div className={`bg-gradient-to-r ${member.gradient} p-8 text-center relative overflow-hidden`}>
-                    <div className="absolute inset-0 bg-black/10"></div>
-                    <div className="relative z-10">
-                      <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white/20 backdrop-blur-sm mb-4">
-                        <member.icon className="w-12 h-12 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold text-white mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-white/90 font-medium">
-                        {member.position}
-                      </p>
-                    </div>
+                  {/* Image */}
+                  <div className="w-full h-64 overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
-                  
+
                   {/* Content */}
                   <div className="p-8">
+                    <h3 className="text-2xl font-bold text-foreground mb-1">
+                      {member.name}
+                    </h3>
+                    <p className="text-muted-foreground font-medium mb-4">
+                      {member.position}
+                    </p>
+
                     <p className="text-muted-foreground mb-6 leading-relaxed">
                       {member.description}
                     </p>
