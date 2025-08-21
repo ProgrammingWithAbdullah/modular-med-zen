@@ -3,97 +3,114 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapPin, Building, Calendar, CheckCircle, Clock, Award } from 'lucide-react';
+import imcHospital from '@/assets/imc-hospital.jpg';
+import premiumHealth from '@/assets/premium-health.jpg';
+import noorAlshifa from '@/assets/noor-alshifa.jpg';
+import childrenHospitalMultan from '@/assets/children-hospital-multan.jpg';
+import multanCardiology from '@/assets/multan-cardiology.jpg';
 
 const Projects = () => {
   const projects = [
     {
       name: 'Integrated Medical Care (IMC) Hospital',
       location: 'D.H.A Phase-5 Lahore',
-      scope: '06 theaters',
-      status: 'completed',
-      category: 'Hospital Complex'
+      scope: '06 Operation Theaters',
+      status: 'Completed',
+      category: 'Multi-Specialty Hospital',
+      image: imcHospital
     },
     {
       name: 'Premium Health International',
       location: 'G-8 Islamabad',
       scope: '04 Theaters & ICU',
-      status: 'completed',
-      category: 'Medical Center'
+      status: 'Completed',
+      category: 'Healthcare Facility',
+      image: premiumHealth
     },
     {
       name: 'Noor Al-Shifa Cardiac Hospital',
       location: 'Lahore',
-      scope: '02 Theaters',
-      status: 'completed',
-      category: 'Cardiac Center'
+      scope: '02 Operation Theaters',
+      status: 'Completed',
+      category: 'Cardiac Specialty',
+      image: noorAlshifa
     },
     {
-      name: 'Children Hospital',
+      name: 'Children Hospital Multan',
       location: 'Multan',
-      scope: '08 Theaters',
-      status: 'completed',
-      category: 'Pediatric Hospital'
+      scope: '08 Operation Theaters',
+      status: 'Completed',
+      category: 'Pediatric Hospital',
+      image: childrenHospitalMultan
     },
     {
       name: 'Multan Institute of Cardiology',
       location: 'Multan',
-      scope: '04 Theaters',
-      status: 'completed',
-      category: 'Cardiac Institute'
+      scope: '04 Operation Theaters',
+      status: 'Completed',
+      category: 'Cardiac Institute',
+      image: multanCardiology
     },
     {
-      name: 'Children Hospital',
+      name: 'Children Hospital Gujranwala',
       location: 'Gujranwala',
-      scope: '02 Theaters',
-      status: 'completed',
-      category: 'Pediatric Hospital'
+      scope: '02 Operation Theaters',
+      status: 'Completed',
+      category: 'Pediatric Hospital',
+      image: childrenHospitalMultan
     },
     {
       name: 'Ch. Bashir Hospital',
       location: 'G-13 Islamabad',
-      scope: '02 Theaters',
-      status: 'completed',
-      category: 'General Hospital'
+      scope: '02 Operation Theaters',
+      status: 'Completed',
+      category: 'General Hospital',
+      image: premiumHealth
     },
     {
       name: 'Retina Eye Care Hospital',
       location: 'Gulberg-III Lahore',
-      scope: '04 Theaters',
-      status: 'completed',
-      category: 'Eye Hospital'
+      scope: '04 Operation Theaters',
+      status: 'Completed',
+      category: 'Eye Specialty',
+      image: imcHospital
     },
     {
       name: 'POB Hospital',
       location: 'Lahore',
-      scope: '01 Theater',
-      status: 'completed',
-      category: 'General Hospital'
+      scope: '01 Operation Theater',
+      status: 'Completed',
+      category: 'General Hospital',
+      image: imcHospital
     },
     {
       name: 'IBADAT International University Hospital',
       location: 'Rawalpindi',
-      scope: '04 Theaters',
-      status: 'ongoing',
-      category: 'University Hospital'
+      scope: '04 Operation Theaters',
+      status: 'Ongoing',
+      category: 'University Hospital',
+      image: premiumHealth
     },
     {
       name: 'Haripur International Hospital',
       location: 'Haripur',
-      scope: 'Hybrid OR',
-      status: 'ongoing',
-      category: 'International Hospital'
+      scope: 'Hybrid Operation Theater',
+      status: 'Ongoing',
+      category: 'International Hospital',
+      image: imcHospital
     },
     {
       name: 'AFIC Rawalpindi',
       location: 'Rawalpindi',
-      scope: 'Hybrid OR',
-      status: 'ongoing',
-      category: 'Military Hospital'
+      scope: 'Hybrid Operation Theater',
+      status: 'Ongoing',
+      category: 'Military Hospital',
+      image: premiumHealth
     }
   ];
 
-  const completedProjects = projects.filter(p => p.status === 'completed');
-  const ongoingProjects = projects.filter(p => p.status === 'ongoing');
+  const completedProjects = projects.filter(p => p.status === 'Completed');
+  const ongoingProjects = projects.filter(p => p.status === 'Ongoing');
 
   const stats = [
     { label: 'Total Projects', value: projects.length, icon: Building },
@@ -159,9 +176,18 @@ const Projects = () => {
             {completedProjects.map((project, index) => (
               <Card 
                 key={project.name}
-                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in"
+                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                {/* Project Image */}
+                <div className="w-full h-48 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+                
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500/10">
@@ -213,9 +239,18 @@ const Projects = () => {
             {ongoingProjects.map((project, index) => (
               <Card 
                 key={project.name}
-                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in"
+                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                {/* Project Image */}
+                <div className="w-full h-48 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.name} 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+                
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent-orange/10">

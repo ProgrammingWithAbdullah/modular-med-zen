@@ -53,7 +53,10 @@ const AboutSection = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Established in 2021, Modular Med Solutions (Pvt) Ltd offers a wide variety of Modular Operation Theaters, 
-            Clean Rooms & Laboratory Furniture to suit the needs of modern medical workspace.
+            Clean Rooms & Laboratory Furniture to suit the needs of workspace. Listed amongst the leaders in modern modular 
+            metal structures, our versatility is authenticated in various specialty solutions, supported with highly skilled 
+            labor who are engaged in continuous improvisation & bringing out products and solutions, backed with outstanding 
+            service that outclasses any similar products in the market.
           </p>
         </div>
 
@@ -74,9 +77,10 @@ const AboutSection = () => {
                 who are engaged in continuous improvisation & bringing out products and solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                We excel at designing Operation Theaters, planning ergonomic, convenient layouts tailored to the 
-                needs of surgery staff and individual safety standards while also lending a helping hand for 
-                designers and engineers who are modeling workplace layouts.
+                We are Manufacture/Importer of all components of Modular Operation theaters (Glass, S.S 304 Powder 
+                Coated & M.S powder coated). Laboratory Tables, Storage Cupboards, Scrub Sink Units, Chemical Storage 
+                Cabinets, Mobile Racks, Clean Room Furniture and other MS, SS & Glass furniture can be purchased as 
+                standard units or individually modified according to the needs of the customer.
               </p>
             </div>
 

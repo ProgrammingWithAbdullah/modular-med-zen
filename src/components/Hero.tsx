@@ -44,8 +44,9 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Leading manufacturer of world-class Modular Operation Theaters, Clean Rooms & Laboratory Furniture. 
-                Delivering excellence in medical infrastructure since 2021.
+                Pakistan's leading manufacturer of world-class Modular Operation Theaters, Clean Rooms & Laboratory Furniture. 
+                We excel at designing Operation Theaters, planning ergonomic layouts tailored to surgery staff needs and 
+                safety standards. Delivering excellence in medical infrastructure with outstanding service since 2021.
               </p>
             </div>
 

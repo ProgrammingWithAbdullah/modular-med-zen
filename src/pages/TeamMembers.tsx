@@ -12,7 +12,7 @@ const TeamMembers = () => {
       name: 'Sajjad Saeed',
       position: 'Chief Executive Officer',
       phone: '+923224498238',
-      email: 'ceo@modularmedsolutions.com',
+      email: 'sajjadsaeed@modular-med.com',
       description: 'Visionary leader with extensive experience in medical equipment manufacturing and healthcare solutions.',
       image: teammember1,
       gradient: 'from-accent-cyan to-accent-pink'
@@ -21,7 +21,7 @@ const TeamMembers = () => {
       name: 'Abdul Razzaq',
       position: 'Managing Director',
       phone: '+923335173034',
-      email: 'md@modularmedsolutions.com',
+      email: 'abdul.razzaq@modular-med.com',
       description: 'Strategic operations expert driving innovation and excellence in modular medical infrastructure.',
       image: teammember2,
       gradient: 'from-accent-pink to-accent-orange'

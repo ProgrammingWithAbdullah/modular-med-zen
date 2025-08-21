@@ -62,7 +62,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-sm">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-background/80">Lahore, Pakistan</span>
+                <span className="text-background/80">Head Office: 36 G Sabzazar Lahore</span>
+              </div>
+              <div className="flex items-center space-x-3 text-sm">
+                <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                <span className="text-background/80">Branch: Plot # 34, Tarlai Kalan, Street # 1 Islamabad</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
@@ -70,7 +74,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-background/80">info@modularmed.com</span>
+                <span className="text-background/80">sajjadsaeed@modular-med.com</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Clock className="h-4 w-4 text-primary flex-shrink-0" />
