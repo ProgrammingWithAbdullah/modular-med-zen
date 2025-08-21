@@ -123,7 +123,7 @@ const WhyChooseUs = () => {
               Join hundreds of satisfied clients who have chosen Modular MED Solutions for their medical infrastructure needs.
             </p>
             <button className="bg-gradient-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-opacity shadow-elegant hover:shadow-glow">
-              Get Your Free Consultation
+              Get Your Consultation
             </button>
           </div>
         </div>

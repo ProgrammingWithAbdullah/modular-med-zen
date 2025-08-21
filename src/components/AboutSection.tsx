@@ -60,9 +60,6 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Product Carousel */}
-        <ProductCarousel />
-
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
