@@ -10,6 +10,14 @@ import ProductsServices from "./pages/ProductsServices";
 import Affiliations from "./pages/Affiliations";
 import TeamMembers from "./pages/TeamMembers";
 import Projects from "./pages/Projects";
+import ModularTheatreSystems from "./pages/products/ModularTheatreSystems";
+import ColoredGlassPanels from "./pages/products/ColoredGlassPanels";
+import GIPowderCoating from "./pages/products/GIPowderCoating";
+import Customization from "./pages/products/Customization";
+import SealingGaskets from "./pages/products/SealingGaskets";
+import WallProtection from "./pages/products/WallProtection";
+import HermeticLights from "./pages/products/HermeticLights";
+import AntiMicrobialFlooring from "./pages/products/AntiMicrobialFlooring";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +34,14 @@ const App = () => (
           <Route path="/affiliations" element={<Affiliations />} />
           <Route path="/team-members" element={<TeamMembers />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/products/modular-theatre-systems" element={<ModularTheatreSystems />} />
+          <Route path="/products/colored-glass-panels" element={<ColoredGlassPanels />} />
+          <Route path="/products/gi-powder-coating" element={<GIPowderCoating />} />
+          <Route path="/products/customization" element={<Customization />} />
+          <Route path="/products/sealing-gaskets" element={<SealingGaskets />} />
+          <Route path="/products/wall-protection" element={<WallProtection />} />
+          <Route path="/products/hermetic-lights" element={<HermeticLights />} />
+          <Route path="/products/anti-microbial-flooring" element={<AntiMicrobialFlooring />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

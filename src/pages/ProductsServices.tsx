@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Wrench, Zap, Shield, Settings, Building, Stethoscope } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Import all product images
 import modularTheatreSystems from '@/assets/modular-theatre-systems.jpg';
@@ -198,10 +199,10 @@ const ProductsServices = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {productItems.map((product, index) => (
-              <Card 
-                key={product.name}
-                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden cursor-pointer"
-                style={{ animationDelay: `${index * 50}ms` }}
+              <Link to={`/products/${product.name.toLowerCase().replace(/[\s\/]/g, '-').replace(/--+/g, '-')}`} key={product.name}>
+                <Card 
+                  className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden cursor-pointer"
+                  style={{ animationDelay: `${index * 50}ms` }}
               >
                 {/* Product Image */}
                 <div className="w-full h-48 overflow-hidden">
@@ -230,7 +231,8 @@ const ProductsServices = () => {
                     {product.category}
                   </Badge>
                 </CardContent>
-              </Card>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
