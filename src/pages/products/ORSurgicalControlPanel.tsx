@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { ArrowLeft, Lightbulb, Wind, Stethoscope, AlertTriangle, Gauge, Thermometer, Calendar, Clock } from 'lucide-react';
+import { ArrowLeft, Lightbulb, Wind, Stethoscope, AlertTriangle, Gauge, Thermometer, Calendar, Clock, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import orControlPanelImg from '@/assets/or-surgical-control-panel.jpg';
 import orControlPanelImg2 from '@/assets/or-surgical-control-panel-2.jpg';
