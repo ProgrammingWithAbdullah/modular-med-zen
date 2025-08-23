@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Shield, Sparkles, Package, Settings, CheckCircle, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ImageSlider from "@/components/ImageSlider";
 import operationTheaterCabinetsImg from '@/assets/operation-theater-cabinets.jpg';
 import operationTheaterCabinetsImg2 from '@/assets/operation-theater-cabinets-2.jpg';
 import operationTheaterCabinetsImg3 from '@/assets/operation-theater-cabinets-3.jpg';
@@ -302,6 +303,21 @@ const OperationTheaterCabinets = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-4">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Integrated Medical Care{" "}
+            <span className="text-gradient">
+            Lahore Operation Theaters
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground mb-12">
+            A glimpse of our D.H.A Phase-5 Lahore 06 Operation Theaters
+          </p>
+          <ImageSlider />
         </div>
       </section>
 
