@@ -9,10 +9,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import imcHospital from '@/assets/imc-hospital.jpg';
-import premiumHealth from '@/assets/premium-health.jpg';
-import noorAlshifa from '@/assets/noor-alshifa.jpg';
-import childrenHospitalMultan from '@/assets/children-hospital-multan.jpg';
+import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
+import premiumHealthReal from '@/assets/premium-health-real.jpg';
+import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
+import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.jpg';
 
 const Index = () => {
   const featuredProjects = [
@@ -21,28 +21,32 @@ const Index = () => {
       location: 'D.H.A Phase-5 Lahore',
       scope: '06 Operation Theaters',
       category: 'Multi-Specialty Hospital',
-      image: imcHospital
+      image: imcHospitalReal,
+      description: '125-bedded purpose-built multi-specialty modern healthcare facility'
     },
     {
       name: 'Premium Health International',
-      location: 'G-8 Islamabad',
+      location: 'G-8 Markaz Islamabad',
       scope: '04 Theaters & ICU',
       category: 'Healthcare Facility',
-      image: premiumHealth
+      image: premiumHealthReal,
+      description: 'Leading healthcare institution providing world-class medical services'
     },
     {
       name: 'Children Hospital Multan',
-      location: 'Multan',
+      location: 'Multan, Punjab',
       scope: '08 Operation Theaters',
       category: 'Pediatric Hospital',
-      image: childrenHospitalMultan
+      image: childrenHospitalMultanReal,
+      description: 'Government pediatric hospital providing specialized healthcare for children'
     },
     {
       name: 'Noor Al-Shifa Cardiac Hospital',
       location: 'Lahore',
       scope: '02 Operation Theaters',
       category: 'Cardiac Specialty',
-      image: noorAlshifa
+      image: noorAlshifaReal,
+      description: 'Specialized cardiac care facility with state-of-the-art heart procedures'
     }
   ];
 

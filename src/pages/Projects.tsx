@@ -3,11 +3,18 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MapPin, Building, Calendar, CheckCircle, Clock, Award } from 'lucide-react';
-import imcHospital from '@/assets/imc-hospital.jpg';
-import premiumHealth from '@/assets/premium-health.jpg';
-import noorAlshifa from '@/assets/noor-alshifa.jpg';
-import childrenHospitalMultan from '@/assets/children-hospital-multan.jpg';
-import multanCardiology from '@/assets/multan-cardiology.jpg';
+import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
+import premiumHealthReal from '@/assets/premium-health-real.jpg';
+import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
+import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.jpg';
+import multanCardiologyReal from '@/assets/multan-cardiology-real.jpg';
+import childrenHospitalGujranwala from '@/assets/children-hospital-gujranwala.jpg';
+import retinaEyeCare from '@/assets/retina-eye-care.jpg';
+import aficRawalpindiReal from '@/assets/afic-rawalpindi-real.jpg';
+import ibadatUniversityHospital from '@/assets/ibadat-university-hospital.jpg';
+import chBashirHospital from '@/assets/ch-bashir-hospital.jpg';
+import haripurInternationalHospital from '@/assets/haripur-international-hospital.jpg';
+import pobHospital from '@/assets/pob-hospital.jpg';
 
 const Projects = () => {
   const projects = [
@@ -17,15 +24,17 @@ const Projects = () => {
       scope: '06 Operation Theaters',
       status: 'Completed',
       category: 'Multi-Specialty Hospital',
-      image: imcHospital
+      image: imcHospitalReal,
+      description: '125-bedded purpose-built multi-specialty modern healthcare facility established in 2022 with DHA Lahore joint venture'
     },
     {
       name: 'Premium Health International',
-      location: 'G-8 Islamabad',
+      location: 'G-8 Markaz Islamabad',
       scope: '04 Theaters & ICU',
       status: 'Completed',
       category: 'Healthcare Facility',
-      image: premiumHealth
+      image: premiumHealthReal,
+      description: 'Leading healthcare institution providing world-class medical services with advanced modular operation theaters'
     },
     {
       name: 'Noor Al-Shifa Cardiac Hospital',
@@ -33,31 +42,35 @@ const Projects = () => {
       scope: '02 Operation Theaters',
       status: 'Completed',
       category: 'Cardiac Specialty',
-      image: noorAlshifa
+      image: noorAlshifaReal,
+      description: 'Specialized cardiac care facility with state-of-the-art modular operation theaters for heart procedures'
     },
     {
       name: 'Children Hospital Multan',
-      location: 'Multan',
+      location: 'Multan, Punjab',
       scope: '08 Operation Theaters',
       status: 'Completed',
       category: 'Pediatric Hospital',
-      image: childrenHospitalMultan
+      image: childrenHospitalMultanReal,
+      description: 'Government pediatric hospital providing specialized healthcare services for children with modern modular OT systems'
     },
     {
-      name: 'Multan Institute of Cardiology',
+      name: 'Ch. Pervaiz Elahi Institute of Cardiology',
       location: 'Multan',
       scope: '04 Operation Theaters',
       status: 'Completed',
       category: 'Cardiac Institute',
-      image: multanCardiology
+      image: multanCardiologyReal,
+      description: 'Premier cardiac care institute with advanced modular operation theaters for complex heart surgeries'
     },
     {
       name: 'Children Hospital Gujranwala',
-      location: 'Gujranwala',
+      location: 'Gujranwala, Punjab',
       scope: '02 Operation Theaters',
       status: 'Completed',
       category: 'Pediatric Hospital',
-      image: childrenHospitalMultan
+      image: childrenHospitalGujranwala,
+      description: 'Government pediatric healthcare facility equipped with modern modular operation theaters'
     },
     {
       name: 'Ch. Bashir Hospital',
@@ -65,7 +78,8 @@ const Projects = () => {
       scope: '02 Operation Theaters',
       status: 'Completed',
       category: 'General Hospital',
-      image: premiumHealth
+      image: chBashirHospital,
+      description: 'General healthcare facility with modern modular operation theaters providing comprehensive medical services'
     },
     {
       name: 'Retina Eye Care Hospital',
@@ -73,7 +87,8 @@ const Projects = () => {
       scope: '04 Operation Theaters',
       status: 'Completed',
       category: 'Eye Specialty',
-      image: imcHospital
+      image: retinaEyeCare,
+      description: 'Specialized ophthalmology center with advanced modular operation theaters for retinal and eye care procedures'
     },
     {
       name: 'POB Hospital',
@@ -81,7 +96,8 @@ const Projects = () => {
       scope: '01 Operation Theater',
       status: 'Completed',
       category: 'General Hospital',
-      image: imcHospital
+      image: pobHospital,
+      description: 'Modern healthcare facility equipped with state-of-the-art modular operation theater systems'
     },
     {
       name: 'IBADAT International University Hospital',
@@ -89,7 +105,8 @@ const Projects = () => {
       scope: '04 Operation Theaters',
       status: 'Ongoing',
       category: 'University Hospital',
-      image: premiumHealth
+      image: ibadatUniversityHospital,
+      description: 'Academic medical institution with advanced modular operation theaters for teaching and patient care'
     },
     {
       name: 'Haripur International Hospital',
@@ -97,15 +114,17 @@ const Projects = () => {
       scope: 'Hybrid Operation Theater',
       status: 'Ongoing',
       category: 'International Hospital',
-      image: imcHospital
+      image: haripurInternationalHospital,
+      description: 'International standard healthcare facility with cutting-edge hybrid modular operation theater technology'
     },
     {
-      name: 'AFIC Rawalpindi',
+      name: 'Armed Forces Institute of Cardiology (AFIC)',
       location: 'Rawalpindi',
       scope: 'Hybrid Operation Theater',
       status: 'Ongoing',
       category: 'Military Hospital',
-      image: premiumHealth
+      image: aficRawalpindiReal,
+      description: 'Premier military cardiac care facility with 46+ years legacy, equipped with advanced hybrid modular OT systems'
     }
   ];
 
