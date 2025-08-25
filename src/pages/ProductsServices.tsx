@@ -42,13 +42,13 @@ const ProductsServices = () => {
       name: 'GI Powder Coating',
       category: 'Finishing',
       image: giPowderCoating,
-      type: 'service'
+      type: 'product'
     },
     {
       name: 'Customization',
       category: 'Services',
       image: customization,
-      type: 'service'
+      type: 'product'
     },
     {
       name: 'Sealing Gaskets',
@@ -238,61 +238,8 @@ const ProductsServices = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-16 px-4 bg-secondary/5">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our <span className="text-gradient">Services</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive support services from design consultation to installation and maintenance, 
-              ensuring optimal performance of your medical infrastructure.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {serviceItems.map((service, index) => (
-              <Card 
-                key={service.name}
-                className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden cursor-pointer"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                {/* Service Image */}
-                <div className="w-full h-48 overflow-hidden">
-                  <img 
-                    src={service.image} 
-                    alt={service.name} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
-                  />
-                </div>
-                
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent/10">
-                      <Settings className="w-5 h-5 text-accent" />
-                    </div>
-                    <Badge variant="secondary" className="bg-accent/10 text-accent border-accent/20 text-xs">
-                      Service
-                    </Badge>
-                  </div>
-                  
-                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
-                    {service.name}
-                  </h3>
-                  
-                  <Badge variant="outline" className="text-xs">
-                    {service.category}
-                  </Badge>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Categories Overview */}
-      <section className="py-16 px-4">
+      {/* <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -321,7 +268,7 @@ const ProductsServices = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Quality Assurance */}
       <section className="py-16 px-4 bg-gradient-elegant/10">

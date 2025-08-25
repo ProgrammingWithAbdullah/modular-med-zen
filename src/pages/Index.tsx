@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
 import premiumHealthReal from '@/assets/premium-health-real.jpg';
 import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
-import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.jpg';
+import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.png';
 
 const Index = () => {
   const featuredProjects = [

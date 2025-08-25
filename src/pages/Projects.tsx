@@ -6,15 +6,15 @@ import { MapPin, Building, Calendar, CheckCircle, Clock, Award } from 'lucide-re
 import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
 import premiumHealthReal from '@/assets/premium-health-real.jpg';
 import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
-import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.jpg';
+import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.png';
 import multanCardiologyReal from '@/assets/multan-cardiology-real.jpg';
-import childrenHospitalGujranwala from '@/assets/children-hospital-gujranwala.jpg';
+import childrenHospitalGujranwala from '@/assets/children-hospital-gujranwala.png';
 import retinaEyeCare from '@/assets/retina-eye-care.jpg';
 import aficRawalpindiReal from '@/assets/afic-rawalpindi-real.jpg';
 import ibadatUniversityHospital from '@/assets/ibadat-university-hospital.jpg';
 import chBashirHospital from '@/assets/ch-bashir-hospital.jpg';
 import haripurInternationalHospital from '@/assets/haripur-international-hospital.jpg';
-import pobHospital from '@/assets/pob-hospital.jpg';
+import pobHospital from '@/assets/pob-hospital.png';
 
 const Projects = () => {
   const projects = [

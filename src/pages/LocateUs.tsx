@@ -5,11 +5,11 @@ import { Button } from '@/components/ui/button';
 
 const LocateUs = () => {
   const handleGetDirections = () => {
-    window.open('https://maps.google.com/maps?daddr=31.5497,74.3436', '_blank');
+  window.open('https://maps.google.com/maps?daddr=31.512345,74.345678', '_blank');
   };
 
   const handleViewOnMap = () => {
-    window.open('https://share.google/q8uvle9vNDmRBNRsp', '_blank');
+    window.open('https://share.google/npjrxrVGtL44xaHsx', '_blank');
   };
 
   return (
