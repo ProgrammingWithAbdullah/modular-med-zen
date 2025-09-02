@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PopupImageSlider from '@/components/PopupImageSlider';
 import { MapPin, Building, Calendar, CheckCircle, Clock, Award } from 'lucide-react';
 import { useState } from 'react';
 import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
@@ -59,24 +60,6 @@ const Projects = () => {
       ]
     },
     {
-      name: 'Noor Al-Shifa Cardiac Hospital',
-      location: 'Lahore',
-      scope: '02 Operation Theaters',
-      status: 'Completed',
-      category: 'Cardiac Specialty',
-      image: noorAlshifaReal,
-      description: 'Specialized cardiac care facility with state-of-the-art modular operation theaters for heart procedures',
-      extendedDescription: 'Noor Al-Shifa Cardiac Hospital represents excellence in specialized cardiac care infrastructure. This facility demanded the highest precision and quality standards for life-critical cardiac procedures. Our team delivered 02 exceptionally advanced modular operation theaters specifically designed for cardiac surgeries. Each theater features specialized cardiac surgical equipment integration, advanced monitoring systems, and precision environmental controls. The modular construction utilizes premium SS 304 grade materials with specialized coatings for enhanced durability and hygiene. Advanced HVAC systems maintain precise temperature and humidity control essential for cardiac procedures. The theaters include integrated surgical control panels, LED X-ray viewers, and specialized medical gas systems optimized for cardiac surgery requirements.',
-      servicesProvided: [
-        '02 Specialized Cardiac Modular Operation Theaters',
-        'Advanced cardiac surgical equipment integration',
-        'Precision environmental control systems for cardiac procedures',
-        'Specialized medical gas systems with cardiac surgery specifications',
-        'Premium SS 304 construction with specialized antimicrobial coatings',
-        'Integrated LED X-ray viewing systems and surgical control panels'
-      ]
-    },
-    {
       name: 'Children Hospital Multan',
       location: 'Multan, Punjab',
       scope: '08 Operation Theaters',
@@ -92,6 +75,24 @@ const Projects = () => {
         'Specialized infection control systems for pediatric care',
         'Premium SS 304 construction with child-safe finishing',
         'Advanced HVAC systems optimized for pediatric procedures'
+      ]
+    },
+    {
+      name: 'Noor Al-Shifa Cardiac Hospital',
+      location: 'Lahore',
+      scope: '02 Operation Theaters',
+      status: 'Completed',
+      category: 'Cardiac Specialty',
+      image: noorAlshifaReal,
+      description: 'Specialized cardiac care facility with state-of-the-art modular operation theaters for heart procedures',
+      extendedDescription: 'Noor Al-Shifa Cardiac Hospital represents excellence in specialized cardiac care infrastructure. This facility demanded the highest precision and quality standards for life-critical cardiac procedures. Our team delivered 02 exceptionally advanced modular operation theaters specifically designed for cardiac surgeries. Each theater features specialized cardiac surgical equipment integration, advanced monitoring systems, and precision environmental controls. The modular construction utilizes premium SS 304 grade materials with specialized coatings for enhanced durability and hygiene. Advanced HVAC systems maintain precise temperature and humidity control essential for cardiac procedures. The theaters include integrated surgical control panels, LED X-ray viewers, and specialized medical gas systems optimized for cardiac surgery requirements.',
+      servicesProvided: [
+        '02 Specialized Cardiac Modular Operation Theaters',
+        'Advanced cardiac surgical equipment integration',
+        'Precision environmental control systems for cardiac procedures',
+        'Specialized medical gas systems with cardiac surgery specifications',
+        'Premium SS 304 construction with specialized antimicrobial coatings',
+        'Integrated LED X-ray viewing systems and surgical control panels'
       ]
     },
     {
@@ -508,6 +509,18 @@ const Projects = () => {
               <DialogDescription className="text-base text-muted-foreground leading-relaxed">
                 {project.extendedDescription}
               </DialogDescription>
+              
+              {/* Add image slider for first 3 hospitals */}
+              {[
+                'Integrated Medical Care (IMC) Hospital',
+                'Premium Health International', 
+                'Children Hospital Multan'
+              ].includes(project.name) && (
+                <div className="mt-6">
+                  <h4 className="text-lg font-semibold text-foreground mb-4">Project Gallery</h4>
+                  <PopupImageSlider />
+                </div>
+              )}
               
               <div className="mt-6">
                 <h4 className="text-lg font-semibold text-foreground mb-4">Services Provided</h4>
