@@ -1,41 +1,51 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Building2, Users, Award, Zap, Shield, Wrench } from 'lucide-react';
+import { useState } from 'react';
 import labImage from '@/assets/lab-equipment.jpg';
 import cleanroomImage from '@/assets/cleanroom.jpg';
 import ProductCarousel from '@/components/ProductCarousel';
 
 const AboutSection = () => {
+  const [selectedFeature, setSelectedFeature] = useState<string | null>(null);
+
   const features = [
     {
       icon: Building2,
       title: 'Modular Design',
-      description: 'Flexible and scalable solutions tailored to your specific requirements.'
+      description: 'Flexible and scalable solutions tailored to your specific requirements.',
+      extendedDescription: 'Our modular design approach allows for complete customization based on your healthcare facility\'s unique needs. Each component is engineered to work seamlessly together, providing maximum flexibility for future expansions or modifications. Whether you\'re setting up a single operation theater or an entire surgical wing, our modular systems can be configured to fit any space and requirement. The standardized components ensure consistent quality while allowing for infinite customization possibilities.'
     },
     {
       icon: Shield,
       title: 'Quality Assurance',
-      description: 'Strict quality control procedures at every stage of production.'
+      description: 'Strict quality control procedures at every stage of production.',
+      extendedDescription: 'Quality is at the heart of everything we do. Our comprehensive quality assurance program includes rigorous testing at every stage of production, from raw material inspection to final installation. We follow international standards and maintain detailed documentation throughout the manufacturing process. Each component undergoes multiple quality checks, ensuring that only the highest grade products reach our clients. Our quality management system is designed to exceed industry standards and maintain consistency across all projects.'
     },
     {
       icon: Users,
       title: 'Expert Team',
-      description: 'Highly skilled professionals with continuous training and improvement.'
+      description: 'Highly skilled professionals with continuous training and improvement.',
+      extendedDescription: 'Our team consists of experienced engineers, skilled technicians, and healthcare facility specialists who understand the unique requirements of medical environments. We invest heavily in continuous training and professional development to stay ahead of industry trends and technological advances. Our experts work closely with clients from initial consultation through final installation, ensuring every project meets the highest standards. Regular training programs keep our team updated with the latest medical equipment standards and installation techniques.'
     },
     {
       icon: Zap,
       title: 'Fast Delivery',
-      description: 'Efficient production and timely installation with systematic approach.'
+      description: 'Efficient production and timely installation with systematic approach.',
+      extendedDescription: 'Time is critical in healthcare facility construction, and we understand the urgency of your projects. Our streamlined production process and efficient supply chain management ensure rapid delivery without compromising quality. Pre-fabricated modular components significantly reduce on-site installation time compared to traditional construction methods. Our systematic approach includes detailed project planning, coordinated logistics, and experienced installation teams that can complete projects in weeks rather than months, minimizing disruption to your operations.'
     },
     {
       icon: Award,
       title: 'Premium Materials',
-      description: 'S.S 304, M.S powder coated, and high-grade glass components.'
+      description: 'S.S 304, M.S powder coated, and high-grade glass components.',
+      extendedDescription: 'We use only the finest materials specifically chosen for medical environments. Our stainless steel components are made from SS 304 grade, providing superior corrosion resistance and easy maintenance. The MS powder-coated elements undergo advanced surface treatment for durability and aesthetic appeal. Our high-grade glass panels offer excellent visibility while maintaining sterile barriers. All materials are selected for their antimicrobial properties, chemical resistance, and ability to withstand rigorous cleaning protocols required in healthcare facilities.'
     },
     {
       icon: Wrench,
       title: 'Complete Service',
-      description: 'From design consultation to installation and ongoing support.'
+      description: 'From design consultation to installation and ongoing support.',
+      extendedDescription: 'We provide end-to-end solutions for all your modular healthcare facility needs. Our comprehensive service includes initial consultation and needs assessment, custom design and engineering, manufacturing, installation, testing, and commissioning. Post-installation, we offer ongoing maintenance support, technical assistance, and upgrade services. Our dedicated support team ensures your facility continues to operate at peak performance with minimal downtime. We also provide training for your staff on proper use and maintenance of the installed systems.'
     }
   ];
 
@@ -143,8 +153,9 @@ const AboutSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={feature.title}
-              className="hover-lift hover-glow transition-all duration-300 animate-scale-in"
+              className="hover-lift hover-glow transition-all duration-300 animate-scale-in cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => setSelectedFeature(feature.title)}
             >
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
@@ -177,6 +188,31 @@ const AboutSection = () => {
             </CardContent>
           </Card>
         </div>
+        
+        {/* Feature Dialogs */}
+        {features.map((feature) => (
+          <Dialog 
+            key={feature.title} 
+            open={selectedFeature === feature.title} 
+            onOpenChange={(open) => !open && setSelectedFeature(null)}
+          >
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-gradient-primary p-3 rounded-lg flex-shrink-0">
+                    <feature.icon className="h-6 w-6 text-white" />
+                  </div>
+                  <DialogTitle className="text-2xl font-bold text-foreground">
+                    {feature.title}
+                  </DialogTitle>
+                </div>
+                <DialogDescription className="text-base text-muted-foreground leading-relaxed">
+                  {feature.extendedDescription}
+                </DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
+        ))}
       </div>
     </section>
   );
