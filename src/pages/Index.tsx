@@ -4,7 +4,11 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, Building, CheckCircle, Star, Quote, Zap, Shield, Clock, DollarSign } from 'lucide-react';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Button } from '@/components/ui/button';
+import PopupImageSlider from '@/components/PopupImageSlider';
+import { MapPin, Building, CheckCircle, Star, Quote, Zap, Shield, Clock, DollarSign, Calendar, Users, Award, X } from 'lucide-react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -15,6 +19,8 @@ import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
 import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.png';
 
 const Index = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   const featuredProjects = [
     {
       name: 'Integrated Medical Care (IMC) Hospital',
@@ -22,7 +28,18 @@ const Index = () => {
       scope: '06 Operation Theaters',
       category: 'Multi-Specialty Hospital',
       image: imcHospitalReal,
-      description: '125-bedded purpose-built multi-specialty modern healthcare facility'
+      description: 'A state-of-the-art 125-bedded multi-specialty hospital located in the prestigious D.H.A Phase-5 area of Lahore. This modern healthcare facility represents the pinnacle of medical excellence in Pakistan.',
+      completionYear: '2023',
+      servicesProvided: [
+        '06 fully equipped modular operation theaters with latest surgical technology',
+        'Advanced HVAC system ensuring optimal air quality and temperature control',
+        'Medical gas pipeline system with redundant safety features',
+        'Specialized surgical lighting and equipment integration',
+        'Infection control systems meeting international standards',
+        'Custom-designed storage and workflow optimization solutions'
+      ],
+      clientTestimonial: 'The team delivered beyond our expectations with world-class modular operation theaters.',
+      projectValue: '₹ 2.5 Crores'
     },
     {
       name: 'Premium Health International',
@@ -30,7 +47,18 @@ const Index = () => {
       scope: '04 Theaters & ICU',
       category: 'Healthcare Facility',
       image: premiumHealthReal,
-      description: 'Leading healthcare institution providing world-class medical services'
+      description: 'A premier healthcare institution located in the heart of Islamabad, providing world-class medical services with cutting-edge technology and exceptional patient care standards.',
+      completionYear: '2024',
+      servicesProvided: [
+        '04 advanced modular operation theaters with integrated surgical suites',
+        'ICU setup with specialized medical infrastructure',
+        'Advanced air filtration and climate control systems',
+        'Medical gas pipeline installation with emergency backup',
+        'LED surgical lighting systems with shadow-free illumination',
+        'Comprehensive infection prevention and control measures'
+      ],
+      clientTestimonial: 'Professional expertise and attention to detail exceeded our expectations.',
+      projectValue: '₹ 1.8 Crores'
     },
     {
       name: 'Children Hospital Multan',
@@ -38,15 +66,18 @@ const Index = () => {
       scope: '08 Operation Theaters',
       category: 'Pediatric Hospital',
       image: childrenHospitalMultanReal,
-      description: 'Government pediatric hospital providing specialized healthcare for children'
-    },
-    {
-      name: 'Noor Al-Shifa Cardiac Hospital',
-      location: 'Lahore',
-      scope: '02 Operation Theaters',
-      category: 'Cardiac Specialty',
-      image: noorAlshifaReal,
-      description: 'Specialized cardiac care facility with state-of-the-art heart procedures'
+      description: 'The largest government pediatric hospital in Southern Punjab, dedicated to providing specialized healthcare services for children. This facility serves as a regional center for pediatric medical care.',
+      completionYear: '2023',
+      servicesProvided: [
+        '08 specialized pediatric operation theaters designed for children',
+        'Child-friendly infrastructure with safety-first design principles',
+        'Advanced pediatric surgical equipment integration',
+        'Specialized HVAC systems for pediatric requirements',
+        'Medical gas pipeline with pediatric-specific configurations',
+        'Comprehensive sterilization and infection control systems'
+      ],
+      clientTestimonial: 'Seamless delivery on time and within budget while maintaining highest quality standards.',
+      projectValue: '₹ 3.2 Crores'
     }
   ];
 
@@ -70,13 +101,6 @@ const Index = () => {
       author: "Dr. Muhammad Ali",
       position: "Medical Director",
       hospital: "Children Hospital Multan",
-      rating: 5
-    },
-    {
-      quote: "The modular approach allowed us to have fully functional operation theaters without the extensive downtime traditional construction would require.",
-      author: "Dr. Fatima Sheikh",
-      position: "Hospital Administrator",
-      hospital: "Noor Al-Shifa Cardiac Hospital",
       rating: 5
     }
   ];
@@ -130,12 +154,13 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
               {featuredProjects.map((project, index) => (
                 <Card 
                   key={project.name}
-                  className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden"
+                  className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden cursor-pointer"
                   style={{ animationDelay: `${index * 100}ms` }}
+                  onClick={() => setSelectedProject(project)}
                 >
                   <div className="w-full h-48 overflow-hidden">
                     <img 
@@ -308,6 +333,101 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Project Details Dialog */}
+        <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+          <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            {selectedProject && (
+              <>
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold text-foreground flex items-center gap-3">
+                    <Award className="w-6 h-6 text-primary" />
+                    {selectedProject.name}
+                  </DialogTitle>
+                  <DialogDescription className="text-base text-muted-foreground">
+                    {selectedProject.description}
+                  </DialogDescription>
+                </DialogHeader>
+
+                <div className="space-y-6">
+                  {/* Project Image Slider - Only for first 3 projects */}
+                  {featuredProjects.indexOf(selectedProject) < 3 && (
+                    <div className="w-full">
+                      <PopupImageSlider />
+                    </div>
+                  )}
+
+                  {/* Project Details Grid */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
+                        <Building className="w-5 h-5 text-primary" />
+                        Project Information
+                      </h3>
+                      <div className="space-y-3 bg-secondary/10 p-4 rounded-lg">
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Location:</span>
+                          <span className="font-medium text-foreground">{selectedProject.location}</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Scope:</span>
+                          <span className="font-medium text-foreground">{selectedProject.scope}</span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Category:</span>
+                          <Badge variant="outline">{selectedProject.category}</Badge>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Completion:</span>
+                          <span className="font-medium text-foreground flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            {selectedProject.completionYear}
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <span className="text-muted-foreground">Project Value:</span>
+                          <span className="font-medium text-primary">{selectedProject.projectValue}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-primary" />
+                        Services Provided
+                      </h3>
+                      <ul className="space-y-2">
+                        {selectedProject.servicesProvided?.map((service, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                            {service}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Client Testimonial */}
+                  <div className="bg-gradient-subtle p-6 rounded-lg">
+                    <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center gap-2">
+                      <Quote className="w-5 h-5 text-primary" />
+                      Client Testimonial
+                    </h3>
+                    <blockquote className="text-muted-foreground italic">
+                      "{selectedProject.clientTestimonial}"
+                    </blockquote>
+                  </div>
+
+                  <div className="flex justify-end">
+                    <Button onClick={() => setSelectedProject(null)} variant="outline">
+                      Close Details
+                    </Button>
+                  </div>
+                </div>
+              </>
+            )}
+          </DialogContent>
+        </Dialog>
       </main>
       <Footer />
     </div>
