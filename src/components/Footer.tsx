@@ -11,15 +11,18 @@ import {
   Instagram,
   ArrowRight
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'About Us', href: '#about' },
-    { name: 'Products & Services', href: '#services' },
-    { name: 'Products', href: '#products' },
-    { name: 'Quality Standards', href: '#quality' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Why Choose Us', href: '/why-choose-us' },
+    { name: 'Products & Services', href: '/products-services' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Affiliations', href: '/affiliations' },
+    { name: 'Team Members', href: '/team-members' },
+    { name: 'Contact Us', href: '/locate-us' },
   ];
 
   const services = [
@@ -88,13 +91,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <nav className="space-y-3">
               {quickLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   className="block text-background/80 hover:text-primary transition-colors duration-200 text-sm"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
