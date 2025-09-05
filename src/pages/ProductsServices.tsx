@@ -147,49 +147,21 @@ const ProductsServices = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4">
+      <section className="pt-24 pb-6 px-4">
         <div className="container mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Products & <span className="text-gradient">Services</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive medical infrastructure solutions designed to meet the highest standards of quality, 
-              functionality, and safety for modern healthcare facilities.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-12 px-4">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {stats.map((stat, index) => (
-              <Card 
-                key={stat.label}
-                className="text-center bg-glass border-glass hover:shadow-elegant transition-all duration-300 animate-fade-in hover:scale-105"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <CardContent className="p-6">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3">
-                    <stat.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="text-2xl font-bold text-foreground mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="py-16 px-4">
+      <section className=" px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our <span className="text-gradient">Products</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Premium medical equipment and infrastructure solutions manufactured to international standards 
