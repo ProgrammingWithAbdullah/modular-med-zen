@@ -164,39 +164,49 @@ const ProductsServices = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {productItems.map((product, index) => (
-              <Link to={`/products/${product.name.toLowerCase().replace(/[\s\/]/g, '-').replace(/--+/g, '-')}`} key={product.name}>
+            {productItems.map((product, index) => {
+              const CardComponent = (
                 <Card 
-                  className="group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden cursor-pointer"
+                  className={`group hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-glass border-glass animate-fade-in overflow-hidden ${product.name === 'Operation Theatre Cabinets' ? 'cursor-pointer' : 'cursor-default'}`}
                   style={{ animationDelay: `${index * 50}ms` }}
-              >
-                {/* Product Image */}
-                <div className="w-full h-48 overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
-                  />
-                </div>
-                
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
-                      <Wrench className="w-5 h-5 text-primary" />
-                    </div>
+                >
+                  {/* Product Image */}
+                  <div className="w-full h-48 overflow-hidden">
+                    <img 
+                      src={product.image} 
+                      alt={product.name} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                    />
                   </div>
                   
-                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    {product.name}
-                  </h3>
-                  
-                  <Badge variant="outline" className="text-xs">
-                    {product.category}
-                  </Badge>
-                </CardContent>
+                  <CardContent className="p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
+                        <Wrench className="w-5 h-5 text-primary" />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {product.name}
+                    </h3>
+                    
+                    <Badge variant="outline" className="text-xs">
+                      {product.category}
+                    </Badge>
+                  </CardContent>
                 </Card>
-              </Link>
-            ))}
+              );
+
+              return product.name === 'Operation Theatre Cabinets' ? (
+                <Link to={`/products/${product.name.toLowerCase().replace(/[\s\/]/g, '-').replace(/--+/g, '-')}`} key={product.name}>
+                  {CardComponent}
+                </Link>
+              ) : (
+                <div key={product.name}>
+                  {CardComponent}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
