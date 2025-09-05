@@ -27,7 +27,7 @@ const images = [imgg1, imgg2, imgg3, imgg4, imgg5, imgg6, imgg7, imgg8, imgg9, i
 
 const ImageSlider1 = () => {
   return (
-    <div className="w-full max-w-5xl mx-auto my-16 rounded-2xl overflow-hidden shadow-elegant">
+    <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto my-12 rounded-2xl overflow-hidden shadow-elegant">
       <Swiper
         modules={[Autoplay, Navigation, Pagination, EffectFade]}
         effect="fade"
@@ -36,7 +36,7 @@ const ImageSlider1 = () => {
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation
-        className="h-[500px] md:h-[600px] lg:h-[700px]"
+        className="aspect-square w-full"
       >
         {images.map((imgg, idx) => (
           <SwiperSlide key={idx}>
