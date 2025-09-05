@@ -16,7 +16,7 @@ import logo from '@/assets/logo.png';
 const Footer = () => {
   const quickLinks = [
     { name: 'About Us', href: '#about' },
-    { name: 'Our Services', href: '#services' },
+    { name: 'Products & Services', href: '#services' },
     { name: 'Products', href: '#products' },
     { name: 'Quality Standards', href: '#quality' },
     { name: 'Contact Us', href: '#contact' },
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-background/80">+92 XXX XXXXXXX</span>
+                <span className="text-background/80">+92 3224498238</span>
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Mail className="h-4 w-4 text-primary flex-shrink-0" />
@@ -78,7 +78,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <Clock className="h-4 w-4 text-primary flex-shrink-0" />
-                <span className="text-background/80">Mon - Fri: 9:00 AM - 6:00 PM</span>
+                <span className="text-background/80">Mon - Sat: 9:00 AM - 6:00 PM</span>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-background/60">
-              © 2024 Modular MED Solutions (Pvt) Ltd. All rights reserved.
+              © 2021 Modular MED Solutions (Pvt) Ltd. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-primary transition-colors">

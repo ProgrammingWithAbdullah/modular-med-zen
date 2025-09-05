@@ -60,7 +60,7 @@ const LocateUs = () => {
 
                     <div className="flex items-center gap-3">
                       <Phone className="h-5 w-5 text-primary" />
-                      <span className="text-muted-foreground">+92 (042) 123-4567</span>
+                      <span className="text-muted-foreground">+92 3224498238</span>
                     </div>
 
                     <div className="flex items-center gap-3">

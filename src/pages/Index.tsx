@@ -108,15 +108,15 @@ const Index = () => {
   const comparisonFeatures = [
     {
       feature: "Installation Time",
-      traditional: "6-12 months",
-      modular: "2-4 weeks",
+      traditional: "9-10 months",
+      modular: "1.5-2 months",
       icon: Clock,
       advantage: "modular"
     },
     {
       feature: "Infection Control",
-      traditional: "Standard materials",
-      modular: "Medical-grade antimicrobial surfaces",
+      traditional: "Not possible",
+      modular: "ISO-5 Clean Room Standards",
       icon: Shield,
       advantage: "modular"
     },
@@ -205,8 +205,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Client Testimonials Section */}
-        <section className="py-16 px-4">
+        {/* <section className="py-16 px-4">
           <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -268,14 +267,14 @@ const Index = () => {
               </Swiper>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Comparison Section */}
         <section className="py-16 px-4 bg-gradient-subtle">
           <div className="container mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Traditional OT vs. <span className="text-gradient">Modular MED OT</span>
+                Conventional OT vs. <span className="text-gradient">Modular Systems</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 See why healthcare facilities are choosing modular solutions
@@ -302,13 +301,13 @@ const Index = () => {
                         
                         {/* Traditional */}
                         <div className="p-6 text-center border-r border-border/50">
-                          <h4 className="font-medium text-muted-foreground mb-2">Traditional</h4>
+                          <h4 className="font-medium text-muted-foreground mb-2">Conventional</h4>
                           <p className="text-sm text-muted-foreground">{item.traditional}</p>
                         </div>
                         
                         {/* Modular MED */}
                         <div className="p-6 text-center bg-green-500/5 relative">
-                          <h4 className="font-medium text-green-600 mb-2">Modular MED</h4>
+                          <h4 className="font-medium text-green-600 mb-2">Modular Systems</h4>
                           <p className="text-sm text-foreground font-medium">{item.modular}</p>
                           {item.advantage === 'modular' && (
                             <div className="absolute top-2 right-2">

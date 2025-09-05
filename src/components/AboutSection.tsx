@@ -100,7 +100,7 @@ const AboutSection = () => {
                   'Laboratory Tables',
                   'Storage Cupboards',
                   'Scrub Sink Units',
-                  'Chemical Storage',
+                  'CSSD furniture',
                   'Mobile Racks',
                   'Glass Furniture'
                 ].map((product, index) => (
