@@ -13,7 +13,7 @@ import Projects from "./pages/Projects";
 import ModularTheatreSystems from "./pages/products/ModularTheatreSystems";
 import ColoredGlassPanels from "./pages/products/ColoredGlassPanels";
 import GIPowderCoating from "./pages/products/GIPowderCoating";
-import Customization from "./pages/products/Customization";
+
 import SealingGaskets from "./pages/products/SealingGaskets";
 import WallProtection from "./pages/products/WallProtection";
 import HermeticLights from "./pages/products/HermeticLights";
@@ -47,7 +47,7 @@ const App = () => (
           <Route path="/products/modular-theatre-systems" element={<ModularTheatreSystems />} />
           <Route path="/products/colored-glass-panels" element={<ColoredGlassPanels />} />
           <Route path="/products/gi-powder-coating" element={<GIPowderCoating />} />
-          <Route path="/products/customization" element={<Customization />} />
+          
           <Route path="/products/sealing-gaskets" element={<SealingGaskets />} />
           <Route path="/products/wall-protection" element={<WallProtection />} />
           <Route path="/products/hermetic-lights" element={<HermeticLights />} />

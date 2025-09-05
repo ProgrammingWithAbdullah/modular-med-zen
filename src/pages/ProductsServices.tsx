@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import modularTheatreSystems from '@/assets/modular-theatre-systems.jpg';
 import coloredGlassPanels from '@/assets/colored-glass-panels.jpg';
 import giPowderCoating from '@/assets/gi-powder-coating.jpg';
-import customization from '@/assets/customization.jpg';
+
 import sealingGaskets from '@/assets/sealing-gaskets.jpg';
 import wallProtection from '@/assets/wall-protection.jpg';
 import hermeticLights from '@/assets/hermetic-lights.jpg';
@@ -42,12 +42,6 @@ const ProductsServices = () => {
       name: 'GI Powder Coating',
       category: 'Finishing',
       image: giPowderCoating,
-      type: 'product'
-    },
-    {
-      name: 'Customization',
-      category: 'Services',
-      image: customization,
       type: 'product'
     },
     {
@@ -190,9 +184,6 @@ const ProductsServices = () => {
                     <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10">
                       <Wrench className="w-5 h-5 text-primary" />
                     </div>
-                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs">
-                      Product
-                    </Badge>
                   </div>
                   
                   <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
