@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Shield, Sparkles, Eye, Settings, CheckCircle, Monitor } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import passThroughWindowsImg from '@/assets/pass-through-windows.jpg';
+import passThroughWindowsImg from '@/assets/pass-through-windows.png';
 import passThroughWindowsImg2 from '@/assets/pass-through-windows-2.jpg';
 import passThroughWindowsImg3 from '@/assets/pass-through-windows-3.jpg';
 

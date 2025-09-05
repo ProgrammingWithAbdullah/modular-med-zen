@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowLeft, Shield, Zap, Clock, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import giPowderCoatingImg from '@/assets/gi-powder-coating.jpg';
+import giPowderCoatingImg from '@/assets/gi-powder-coating.png';
 
 const GIPowderCoating = () => {
   const advantages = [

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 // Import all product images
 import modularTheatreSystems from '@/assets/modular-theatre-systems.jpg';
 import coloredGlassPanels from '@/assets/colored-glass-panels.jpg';
-import giPowderCoating from '@/assets/gi-powder-coating.jpg';
+import giPowderCoating from '@/assets/gi-powder-coating.png';
 
 import sealingGaskets from '@/assets/sealing-gaskets.jpg';
 import wallProtection from '@/assets/wall-protection.jpg';
@@ -18,7 +18,7 @@ import connectPanels from '@/assets/connect-panels.jpg';
 import airIntakeCorners from '@/assets/air-intake-corners.jpg';
 import autoManualDoors from '@/assets/auto-manual-doors.jpg';
 import orSurgicalControlPanel from '@/assets/or-surgical-control-panel.jpg';
-import passThroughWindows from '@/assets/pass-through-windows.jpg';
+import passThroughWindows from '@/assets/pass-through-windows.png';
 import ledXrayViewer from '@/assets/led-xray-viewer.jpg';
 import operationTheaterCabinets from '@/assets/operation-theater-cabinets.jpg';
 import scrubSystem from '@/assets/scrub-system.jpg';
