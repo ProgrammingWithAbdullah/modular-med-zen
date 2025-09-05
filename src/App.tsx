@@ -44,23 +44,23 @@ const App = () => (
           <Route path="/affiliations" element={<Affiliations />} />
           <Route path="/team-members" element={<TeamMembers />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/products/modular-theatre-systems" element={<ModularTheatreSystems />} />
-          <Route path="/products/colored-glass-panels" element={<ColoredGlassPanels />} />
-          <Route path="/products/gi-powder-coating" element={<GIPowderCoating />} />
+          {/* <Route path="/products/modular-theatre-systems" element={<ModularTheatreSystems />} /> */}
+          {/* <Route path="/products/colored-glass-panels" element={<ColoredGlassPanels />} /> */}
+          {/* <Route path="/products/gi-powder-coating" element={<GIPowderCoating />} /> */}
           
-          <Route path="/products/sealing-gaskets" element={<SealingGaskets />} />
-          <Route path="/products/wall-protection" element={<WallProtection />} />
-          <Route path="/products/hermetic-lights" element={<HermeticLights />} />
-          <Route path="/products/anti-microbial-flooring" element={<AntiMicrobialFlooring />} />
-          <Route path="/products/connect-panels" element={<ConnectPanels />} />
-          <Route path="/products/air-intake-corners" element={<AirIntakeCorners />} />
-          <Route path="/products/auto-manual-doors" element={<AutoManualDoors />} />
-          <Route path="/products/or-surgical-control-panel" element={<ORSurgicalControlPanel />} />
-          <Route path="/products/pass-through-windows" element={<PassThroughWindows />} />
-          <Route path="/products/led-x-ray-viewer" element={<LEDXRayViewer />} />
+          {/* <Route path="/products/sealing-gaskets" element={<SealingGaskets />} /> */}
+          {/* <Route path="/products/wall-protection" element={<WallProtection />} /> */}
+          {/* <Route path="/products/hermetic-lights" element={<HermeticLights />} /> */}
+          {/* <Route path="/products/anti-microbial-flooring" element={<AntiMicrobialFlooring />} /> */}
+          {/* <Route path="/products/connect-panels" element={<ConnectPanels />} /> */}
+          {/* <Route path="/products/air-intake-corners" element={<AirIntakeCorners />} /> */}
+          {/* <Route path="/products/auto-manual-doors" element={<AutoManualDoors />} /> */}
+          {/* <Route path="/products/or-surgical-control-panel" element={<ORSurgicalControlPanel />} /> */}
+          {/* <Route path="/products/pass-through-windows" element={<PassThroughWindows />} /> */}
+          {/* <Route path="/products/led-x-ray-viewer" element={<LEDXRayViewer />} /> */}
           <Route path="/products/operation-theatre-cabinets" element={<OperationTheaterCabinets />} />
-          <Route path="/products/scrub-system" element={<ScrubSystem />} />
-          <Route path="/products/medical-gas-pipeline-system" element={<MedicalGasPipelineSystem />} />
+          {/* <Route path="/products/scrub-system" element={<ScrubSystem />} /> */}
+          {/* <Route path="/products/medical-gas-pipeline-system" element={<MedicalGasPipelineSystem />} /> */}
           <Route path="/locate-us" element={<LocateUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
