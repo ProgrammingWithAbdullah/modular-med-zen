@@ -118,26 +118,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Get Quote */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Stay Updated</h4>
+            <h4 className="text-lg font-semibold mb-6">Get Quote</h4>
             <div className="space-y-4">
               <p className="text-background/80 text-sm">
-                Subscribe to our newsletter for the latest updates on medical equipment and solutions.
+                Need medical equipment solutions? Email us directly for a personalized quote.
               </p>
-              <div className="flex space-x-2">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="bg-background/10 border-background/20 text-background placeholder:text-background/60"
-                />
-                <Button 
-                  size="sm" 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground flex-shrink-0"
-                >
-                  <ArrowRight className="h-4 w-4" />
+              <a
+                href="mailto:sajjadsaeed@modular-med.com?subject=Request for Medical Equipment Quote&body=Dear Modular MED Solutions Team,%0D%0A%0D%0AI am interested in your medical equipment and solutions. Please provide me with a detailed quote for:%0D%0A%0D%0A- [Please specify your requirements]%0D%0A%0D%0AProject Details:%0D%0A- Project Type: %0D%0A- Location: %0D%0A- Timeline: %0D%0A- Budget Range: %0D%0A%0D%0APlease feel free to contact me for any additional information.%0D%0A%0D%0AThank you for your time and consideration.%0D%0A%0D%0ABest regards,"
+                className="inline-block w-full"
+              >
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Mail className="h-4 w-4 mr-2" />
+                  Email Us for Quote
                 </Button>
-              </div>
+              </a>
               
               {/* Social Links */}
               <div className="pt-4">
