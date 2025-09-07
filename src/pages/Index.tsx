@@ -7,6 +7,8 @@ import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import PopupImageSlider from '@/components/PopupImageSlider';
+import PopupImageSlider1 from '@/components/PopupImageSlidermultanch';
+import PopupImageSlider2 from '@/components/PopupImageSliderpremium';
 import { MapPin, Building, CheckCircle, Star, Quote, Zap, Shield, Clock, DollarSign, Calendar, Users, Award, X } from 'lucide-react';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -350,10 +352,16 @@ const Index = () => {
 
                 <div className="space-y-6">
                   {/* Project Image Slider - Only for first 3 projects */}
-                  {featuredProjects.indexOf(selectedProject) < 3 && (
-                    <div className="w-full">
-                      <PopupImageSlider />
-                    </div>
+                  {selectedProject?.name === "Integrated Medical Care (IMC) Hospital" && (
+                    <PopupImageSlider />
+                  )}
+
+                  {selectedProject?.name === "Premium Health International" && (
+                    <PopupImageSlider2 />
+                  )}
+
+                  {selectedProject?.name === "Children Hospital Multan" && (
+                    <PopupImageSlider1 />
                   )}
 
                   {/* Project Details Grid */}

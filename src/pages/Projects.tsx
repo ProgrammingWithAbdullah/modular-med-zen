@@ -4,6 +4,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PopupImageSlider from '@/components/PopupImageSlider';
+import PopupImageSlider1 from '@/components/PopupImageSlidermultanch';
+import PopupImageSlider2 from '@/components/PopupImageSliderpremium';
 import { MapPin, Building, Calendar, CheckCircle, Clock, Award } from 'lucide-react';
 import { useState } from 'react';
 import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
@@ -509,16 +511,25 @@ const Projects = () => {
               <DialogDescription className="text-base text-muted-foreground leading-relaxed">
                 {project.extendedDescription}
               </DialogDescription>
-              
-              {/* Add image slider for first 3 hospitals */}
-              {[
-                'Integrated Medical Care (IMC) Hospital',
-                'Premium Health International', 
-                'Children Hospital Multan'
-              ].includes(project.name) && (
+
+              {project.name === "Integrated Medical Care (IMC) Hospital" && (
                 <div className="mt-6">
                   <h4 className="text-lg font-semibold text-foreground mb-4">Project Gallery</h4>
                   <PopupImageSlider />
+                </div>
+              )}
+
+              {project.name === "Premium Health International" && (
+                <div className="mt-6">
+                  <h4 className="text-lg font-semibold text-foreground mb-4">Project Gallery</h4>
+                  <PopupImageSlider2 />
+                </div>
+              )}
+
+              {project.name === "Children Hospital Multan" && (
+                <div className="mt-6">
+                  <h4 className="text-lg font-semibold text-foreground mb-4">Project Gallery</h4>
+                  <PopupImageSlider1 />
                 </div>
               )}
               

@@ -139,12 +139,6 @@ const OperationTheaterCabinets = () => {
                   Smooth, ultra-clean surfaces eliminate germ traps and simplify cleaning and disinfection. Our seamless design eliminates cracks for easy cleaning and sterilization, while the no-lip design simplifies material transfer. Electropolished stainless steel chamber and hardware won't shed particles and resists disinfectants and chemicals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    View Configurations
-                  </Button>
                 </div>
               </div>
               
@@ -455,12 +449,6 @@ const OperationTheaterCabinets = () => {
               Experience the perfect combination of hygiene, functionality, and durability with our operation theater cabinets, designed to enhance workflow efficiency while maintaining the highest standards of sterile environment management.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Custom Design
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Download Catalog
-              </Button>
             </div>
           </div>
         </div>
