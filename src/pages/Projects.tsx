@@ -9,15 +9,15 @@ import { useState } from 'react';
 import imcHospitalReal from '@/assets/imc-hospital-real.jpg';
 import premiumHealthReal from '@/assets/premium-health-real.jpg';
 import noorAlshifaReal from '@/assets/noor-alshifa-real.jpg';
-import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.png';
+import childrenHospitalMultanReal from '@/assets/children-hospital-multan-real.jpg';
 import multanCardiologyReal from '@/assets/multan-cardiology-real.jpg';
-import childrenHospitalGujranwala from '@/assets/children-hospital-gujranwala.png';
+import childrenHospitalGujranwala from '@/assets/children-hospital-gujranwala.jpg';
 import retinaEyeCare from '@/assets/retina-eye-care.jpg';
 import aficRawalpindiReal from '@/assets/afic-rawalpindi-real.jpg';
 import ibadatUniversityHospital from '@/assets/ibadat-university-hospital.jpg';
-import chBashirHospital from '@/assets/ch-bashir-hospital.jpg';
+import chBashirHospital from '@/assets/ch-bashir-hospital.png';
 import haripurInternationalHospital from '@/assets/haripur-international-hospital.jpg';
-import pobHospital from '@/assets/pob-hospital.png';
+import pobHospital from '@/assets/pob-hospital.jpg';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);

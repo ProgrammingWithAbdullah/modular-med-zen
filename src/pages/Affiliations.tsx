@@ -101,10 +101,7 @@ const Affiliations = () => {
               <div className="text-3xl font-bold text-accent-cyan mb-2">100%</div>
               <div className="text-muted-foreground">Compliance Rate</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent-pink mb-2">3+</div>
-              <div className="text-muted-foreground">Regulatory Bodies</div>
-            </div>
+
             <div className="text-center">
               <div className="text-3xl font-bold text-accent-orange mb-2">2021</div>
               <div className="text-muted-foreground">Established</div>
