@@ -15,7 +15,7 @@ const PopupImageSlider2 = () => {
   const images = [premium1, premium2, premium3, premium4, premium5, premium6];
 
   return (
-    <div className="w-full max-w-2xl mx-auto my-6 rounded-lg overflow-hidden shadow-md">
+    <div className="w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto my-8 rounded-xl overflow-hidden shadow-md">
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         loop={true}
@@ -23,7 +23,7 @@ const PopupImageSlider2 = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         navigation
-        className="h-[280px]"
+        className="aspect-[4/3] w-full"
       >
         {images.map((img, idx) => (
           <SwiperSlide key={idx}>

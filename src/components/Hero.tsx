@@ -113,14 +113,16 @@ const Hero: React.FC = () => {
                     Explore Our Solutions
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={downloadPDF}
-                  className="border-2 border-white-600 text-blue-600 bg-white hover:bg-blue-600 hover:text-white px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-transform"
-                >
-                  Download Brochure
-                </Button>
+                <div className="flex justify-center">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    onClick={downloadPDF}
+                    className="w-auto max-w-fit border-2 border-white-600 text-blue-600 bg-white hover:bg-blue-600 hover:text-white px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition-transform"
+                  >
+                    Download Brochure
+                  </Button>
+                </div>
               </div>
             </animated.div>
           </div>
