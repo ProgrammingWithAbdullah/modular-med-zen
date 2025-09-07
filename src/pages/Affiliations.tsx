@@ -3,13 +3,14 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Building2, Award, Globe, Download } from 'lucide-react';
+import adamPDF from '@/assets/adampdf.pdf';
 
 const Affiliations = () => {
-  const downloadPDF = (filename: string) => {
-    const link = document.createElement('a');
-    link.href = `/pdfs/${filename}`;
-    link.download = filename;
-    link.click();
+  const downloadPDF = () => {
+  const link = document.createElement('a');
+  link.href = adamPDF; // resolved URL from import
+  link.download = 'adampdf.pdf';
+  link.click();
   };
 
   const affiliations = [
@@ -92,12 +93,12 @@ const Affiliations = () => {
                   <div className="mt-6 pt-6 border-t border-border">
                     {affiliation.hasDownload ? (
                       <Button 
-                        onClick={() => downloadPDF('adam-partnership-brochure.pdf')}
-                        className="w-full bg-gradient-primary hover:opacity-90 transition-all duration-300"
-                      >
-                        <Download className="w-4 h-4 mr-2" />
-                        Download Brochure
-                      </Button>
+                      onClick={downloadPDF}
+                      className="w-full bg-gradient-primary hover:opacity-90 transition-all duration-300"
+                    >
+                      <Download className="w-4 h-4 mr-2" />
+                      Download Brochure
+                    </Button>
                     ) : (
                       <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-primary/10 rounded-full">
                         <span className="text-sm font-medium text-primary">Certified Member</span>

@@ -2,14 +2,16 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, CheckCircle, Star } from 'lucide-react';
 import heroImage from '@/assets/hero-medical.jpg';
+import adamPDF from '@/assets/brochurepdf.pdf';
 
 const Hero = () => {
   const downloadPDF = () => {
-    const link = document.createElement('a');
-    link.href = '/pdfs/modular-med-brochure.pdf';
-    link.download = 'modular-med-brochure.pdf';
-    link.click();
-  };
+  const link = document.createElement('a');
+  link.href = adamPDF; // resolved URL from import
+  link.download = 'adampdf.pdf';
+  link.click();
+};
+
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle">
