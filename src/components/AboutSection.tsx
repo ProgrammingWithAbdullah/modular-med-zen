@@ -1,14 +1,23 @@
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { Building2, Users, Award, Zap, Shield, Wrench } from 'lucide-react';
+import { Building2, Users, Award, Zap, Shield, Wrench, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import labImage from '@/assets/lab-equipment.jpg';
 import cleanroomImage from '@/assets/cleanroom.jpg';
 import ProductCarousel from '@/components/ProductCarousel';
 
 const AboutSection = () => {
   const [selectedFeature, setSelectedFeature] = useState<string | null>(null);
+
+  const downloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = '/pdfs/modular-med-brochure.pdf';
+    link.download = 'modular-med-brochure.pdf';
+    link.click();
+  };
 
   const features = [
     {
@@ -68,6 +77,28 @@ const AboutSection = () => {
             labor who are engaged in continuous improvisation & bringing out products and solutions, backed with outstanding 
             service that outclasses any similar products in the market.
           </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-8 justify-center">
+            <Link to="/products-services">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary hover:opacity-90 transition-all duration-300 hover-lift group"
+              >
+                Explore Our Solutions
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={downloadPDF}
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
+            >
+              Download Brochure
+            </Button>
+          </div>
         </div>
 
         {/* Main Content Grid */}
