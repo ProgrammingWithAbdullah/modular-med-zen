@@ -4,6 +4,13 @@ import { ArrowRight, CheckCircle, Star } from 'lucide-react';
 import heroImage from '@/assets/hero-medical.jpg';
 
 const Hero = () => {
+  const downloadPDF = () => {
+    const link = document.createElement('a');
+    link.href = '/pdfs/modular-med-brochure.pdf';
+    link.download = 'modular-med-brochure.pdf';
+    link.click();
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-subtle">
       {/* Background with overlay */}
@@ -82,6 +89,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={downloadPDF}
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"
               >
                 Download Brochure
