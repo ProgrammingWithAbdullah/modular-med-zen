@@ -36,7 +36,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
+          <a href="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
             <img 
               src={logo}
               alt="Modular MED Solutions"
@@ -48,7 +48,7 @@ const Header = () => {
               </h1>
               <p className="text-xs text-muted-foreground">Pakistan's First Class Operation Theatre Manufacturer</p>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
