@@ -121,13 +121,12 @@ const LEDXRayViewer = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   High-quality film viewers with collimation and luminous density control represent indispensable tools for radiologists. The adjustable shutters fitted between scratch-proof mineral glass and high-grade acrylic ensure sharp-edge collimation and accurate luminous density for marked improvement in detail recognition.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Size Options
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -367,13 +366,12 @@ const LEDXRayViewer = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Experience the precision and reliability of our LED X-Ray viewers, designed to support accurate diagnosis and improve radiologist efficiency in professional medical environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Demonstration
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Compare Sizes
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

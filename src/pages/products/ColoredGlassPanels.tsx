@@ -54,13 +54,12 @@ const ColoredGlassPanels = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Our colored glass panels bring vibrancy and visual appeal to theatre spaces. We use high-quality UV Ceramic materials to create stunning and unique designs that add a touch of elegance to any theatre.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    View Gallery
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -178,13 +177,12 @@ const ColoredGlassPanels = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Discover how our colored glass panels can enhance both the functionality and aesthetic appeal of your medical facility.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Get Custom Quote
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                View Color Options
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

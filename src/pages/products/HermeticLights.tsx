@@ -84,13 +84,12 @@ const HermeticLights = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Direct LED light recessed fixture, for energy saving. It is suitable for installation on modular counter-ceilings panels with hidden and sealed structure, specifically designed for special environments such as operating rooms.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Specs
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -304,13 +303,12 @@ const HermeticLights = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Experience the perfect combination of energy efficiency, durability, and medical-grade protection with our hermetic lighting solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Get Lighting Quote
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Technical Consultation
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

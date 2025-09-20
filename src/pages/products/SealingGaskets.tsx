@@ -72,13 +72,12 @@ const SealingGaskets = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   The hermetic sealing between the coating panels is realized using a non-toxic silicone gasket. The seal can be removed to allow easy disassembling of each panel. There are different colors of the compound to reach the best aesthetic solution.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Specs
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -243,13 +242,12 @@ const SealingGaskets = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Discover how our advanced sealing gasket solutions can provide the perfect balance of performance, aesthetics, and maintainability for your project.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Samples
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Technical Consultation
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

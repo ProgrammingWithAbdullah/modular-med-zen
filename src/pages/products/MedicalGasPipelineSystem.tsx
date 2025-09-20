@@ -144,13 +144,12 @@ const MedicalGasPipelineSystem = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   The Medical Gas Pipeline System (MGPS) is a centralized network that supplies medical gases such as oxygen, nitrous oxide, medical air, and vacuum to various points in a healthcare facility. The system ensures safe, uninterrupted, and efficient delivery of life-sustaining gases to critical areas like operating rooms, ICUs, and emergency departments.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    System Design
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Compliance Guide
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -477,13 +476,12 @@ const MedicalGasPipelineSystem = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Ensure the highest standards of patient care with our comprehensive Medical Gas Pipeline Systems, designed for reliability, safety, and regulatory compliance in critical healthcare environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                System Assessment
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Compliance Audit
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

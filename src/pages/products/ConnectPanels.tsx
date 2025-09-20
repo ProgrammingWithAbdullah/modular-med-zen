@@ -83,13 +83,12 @@ const ConnectPanels = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Our Connect panels are designed and built to integrate all kinds of utility systems seamlessly. Made from premium stainless steel, they guarantee maximum linearity, cutting-edge aesthetics, and easy maintenance access for modern healthcare facilities.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Specifications
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -299,13 +298,12 @@ const ConnectPanels = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Discover how our Connect Panels can simplify your medical facility's utility management while maintaining the highest standards of hygiene and functionality.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Get Custom Design
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Download Catalog
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

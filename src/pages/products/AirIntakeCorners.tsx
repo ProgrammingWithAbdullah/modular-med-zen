@@ -86,13 +86,12 @@ const AirIntakeCorners = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   The indoor air extraction element is constructed entirely from stainless steel AIS 304. The four corners of the Operating Theater are inclined at 45° to allow easy cleaning and are equipped with an A/C system that draws air from the room, preventing contaminated particles from returning to the operating area.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Details
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -286,13 +285,12 @@ const AirIntakeCorners = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Experience superior air quality management with our precision-engineered air intake corner systems designed for critical healthcare environments.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Installation
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Air Quality Assessment
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

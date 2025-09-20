@@ -84,13 +84,12 @@ const AutoManualDoors = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Automatic doors for controlled atmosphere environments, featuring super silent operation, maximum hygiene, safety, and carrying capacity. Available in automatic or manual sliding/hinged configurations with integrated blinds and anti-RX protection.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    View Catalog
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -300,13 +299,12 @@ const AutoManualDoors = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Discover how our automatic and manual door systems can enhance the safety, hygiene, and functionality of your healthcare facility while maintaining the highest standards of performance.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Get Door Assessment
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                View Installation Guide
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

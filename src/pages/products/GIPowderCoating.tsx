@@ -54,13 +54,12 @@ const GIPowderCoating = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Our GI powder coated designs provide durability and protection against corrosion. This coating technique ensures that the theatre systems are long-lasting and able to withstand the rigors of daily use.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Details
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -235,13 +234,12 @@ const GIPowderCoating = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Ensure the longevity and performance of your medical equipment with our advanced GI powder coating solutions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Service Quote
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Schedule Consultation
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

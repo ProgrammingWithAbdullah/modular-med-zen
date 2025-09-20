@@ -82,13 +82,12 @@ const AntiMicrobialFlooring = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Homogeneous vinyl flooring is a type of resilient flooring made from a single layer of vinyl material throughout its thickness. Unlike layered vinyl, it's composed of a homogeneous mixture of vinyl resins, plasticizers, and pigments fused together during manufacturing.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    View Samples
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -305,13 +304,12 @@ const AntiMicrobialFlooring = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Experience the benefits of homogeneous vinyl flooring designed specifically for healthcare environments. Durability, hygiene, and performance in one solution.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Flooring Quote
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Schedule Site Visit
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

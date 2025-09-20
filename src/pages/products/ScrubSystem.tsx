@@ -128,13 +128,12 @@ const ScrubSystem = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   A scrub system is an essential component in surgical and sterile environments, designed to support pre-operative hand hygiene for medical staff. These systems include stainless steel scrub sinks, automatic dispensers, and hands-free controls to maintain aseptic conditions and reduce surgical site infection risks.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Installation Guide
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -429,13 +428,12 @@ const ScrubSystem = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Implement our comprehensive scrub systems to support strict hygiene protocols, reduce infection risks, and enhance the safety of your surgical procedures with professional-grade equipment designed for medical excellence.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request System Design
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                Hygiene Consultation
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

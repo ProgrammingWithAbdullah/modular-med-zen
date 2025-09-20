@@ -67,13 +67,12 @@ const WallProtection = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Comprehensive wall protection solutions designed to safeguard healthcare facility walls while providing safety and support for patients, staff, and visitors through our corner glass protection and bumper handrail systems.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Get Quote
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Installation Guide
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -291,13 +290,12 @@ const WallProtection = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Invest in comprehensive wall protection systems that enhance safety, reduce maintenance costs, and improve the overall functionality of your healthcare facility.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Request Installation Quote
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                View Protection Systems
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

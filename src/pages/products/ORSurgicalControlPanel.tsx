@@ -92,13 +92,12 @@ const ORSurgicalControlPanel = () => {
                 <p className="text-xl text-muted-foreground leading-relaxed mb-8">
                   Comprehensive operating room control system managing general lighting, laminar flow, operation lamps, AGSS control, medical gas monitoring, and air conditioning systems. Features advanced automation, real-time monitoring, and integrated alarm systems for optimal surgical environment management.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                    Request Demo
-                  </Button>
-                  <Button variant="outline" className="px-8 py-3">
-                    Technical Manual
-                  </Button>
+                <div className="flex justify-center">
+                  <Link to="/locate-us">
+                    <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                      Get Consultation
+                    </Button>
+                  </Link>
                 </div>
               </div>
               
@@ -376,13 +375,12 @@ const ORSurgicalControlPanel = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Experience the ultimate in surgical environment control with our comprehensive OR/Surgical Control Panel system, designed to enhance safety, efficiency, and precision in critical medical procedures.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
-                Schedule Demo
-              </Button>
-              <Button variant="outline" className="px-8 py-3">
-                System Integration
-              </Button>
+            <div className="flex justify-center">
+              <Link to="/locate-us">
+                <Button className="bg-gradient-primary hover:opacity-90 px-8 py-3">
+                  Get Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
